@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Dearest Anushka 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div id="fade"></div>
+<div id="glow"></div>
+
+<!-- SCREEN 1 -->
+<section class="screen active" id="screen1">
+  <h1>My Dearest Anushka 💖</h1>
+  <p class="subtitle">A Valentine’s Journey ✨</p>
+
+  <p>
+    “Somewhere between fate and forever,<br>
+    my heart chose you — quietly and completely.” 💕
+  </p>
+
+  <p>
+    “These are the words I feel every day,<br>
+    even when I don’t always say them.” 💌
+  </p>
+
+  <button onclick="start()">Begin Our Journey 💖</button>
+</section>
+
+<!-- SCREEN 2 -->
+<section class="screen" id="screen2">
+  <h2>A Message From My Heart 💌</h2>
+
+  <div class="letter">
+    <p>My dearest Anushka,</p>
+    <p>Loving you feels effortless. 💕</p>
+    <p>Your presence brings peace to my heart,</p>
+    <p>and your laughter feels like sunshine after rain. ☀️</p>
+    <p>I may not promise perfection,</p>
+    <p>but I promise honesty, effort,</p>
+    <p>and a heart that chooses you — every single day. 💖</p>
+    <p class="highlight">I love you more than words could ever express. ✨</p>
+    <p class="signature">Forever yours,<br>Virat ❤️</p>
+  </div>
+
+  <button onclick="ask()">One Last Question 💞</button>
+</section>
+
+<!-- SCREEN 3 -->
+<section class="screen" id="screen3">
+  <h2>Will you be my Valentine, Anushka? 💘</h2>
+
+  <p id="hint" class="hint"></p>
+
+  <div class="buttons">
+    <button onclick="yes()">Yes 💖😍</button>
+    <button id="noBtn">No 😅🙈</button>
+  </div>
+</section>
+
+<!-- SCREEN 4 -->
+<section class="screen" id="screen4">
+  <img src="photo.jpg" class="photo" alt="Us">
+
+  <div class="final-letter">
+    <p>“I knew it… my heart always knew.” 💖</p>
+    <p>“This will forever be my favorite story — ours.” ✨</p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
