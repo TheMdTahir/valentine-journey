@@ -10,7 +10,7 @@ body {
   color: #5a3a3a;
 }
 
-/* SCREENS */
+/* Screens */
 .screen {
   min-height: 100vh;
   display: none;
@@ -20,17 +20,19 @@ body {
   text-align: center;
   padding: 40px 20px;
 }
-.screen.active { display: flex; }
+.screen.active {
+  display: flex;
+}
 
-/* TEXT */
+/* Text */
 h1, h2 {
   color: #b03060;
   font-weight: normal;
   margin-bottom: 18px;
 }
-
-.subtitle { margin-bottom: 26px; }
-
+.subtitle {
+  margin-bottom: 26px;
+}
 p {
   max-width: 520px;
   font-size: 18px;
@@ -38,7 +40,7 @@ p {
   margin-bottom: 16px;
 }
 
-/* BUTTONS */
+/* Buttons */
 button {
   padding: 14px 36px;
   border-radius: 40px;
@@ -50,12 +52,11 @@ button {
   margin-top: 18px;
   transition: transform 0.3s ease;
 }
-
 button:hover {
   transform: scale(1.05);
 }
 
-/* LETTER */
+/* Letter animation */
 .letter p {
   opacity: 0;
   transform: translateY(10px);
@@ -65,9 +66,13 @@ button:hover {
   opacity: 1;
   transform: translateY(0);
 }
-
-.highlight { font-style: italic; color: #b03060; }
-.signature { margin-top: 10px; }
+.highlight {
+  font-style: italic;
+  color: #b03060;
+}
+.signature {
+  margin-top: 10px;
+}
 
 /* YES / NO */
 .buttons {
@@ -75,14 +80,13 @@ button:hover {
   width: 260px;
   height: 140px;
 }
-
 #noBtn {
   position: absolute;
   background: #aaa;
   transition: left 0.4s ease, top 0.4s ease;
 }
 
-/* HINT */
+/* Hint */
 .hint {
   font-size: 16px;
   color: #b03060;
@@ -91,7 +95,7 @@ button:hover {
   transition: opacity 0.4s ease;
 }
 
-/* FINAL */
+/* Final */
 .photo {
   width: 240px;
   border-radius: 18px;
@@ -103,14 +107,15 @@ button:hover {
   opacity: 1;
   transform: scale(1);
 }
-
 .final-letter p {
   opacity: 0;
   transition: opacity 1.2s ease;
 }
-.final-letter p.show { opacity: 1; }
+.final-letter p.show {
+  opacity: 1;
+}
 
-/* EFFECTS */
+/* Effects */
 #fade {
   position: fixed;
   inset: 0;
@@ -119,8 +124,9 @@ button:hover {
   transition: opacity 1s ease;
   pointer-events: none;
 }
-#fade.show { opacity: 1; }
-
+#fade.show {
+  opacity: 1;
+}
 #glow {
   position: fixed;
   width: 200px;

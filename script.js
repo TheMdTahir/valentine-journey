@@ -35,14 +35,14 @@ function yes() {
   }, 2200);
 }
 
-/* LETTER ANIMATION */
+/* Letter animation */
 function revealLetter() {
   document.querySelectorAll(".letter p").forEach((p, i) => {
     setTimeout(() => p.classList.add("show"), i * 450);
   });
 }
 
-/* FINAL */
+/* Final reveal */
 function showFinal() {
   const photo = document.querySelector(".photo");
   const text = document.querySelectorAll(".final-letter p");
@@ -53,7 +53,7 @@ function showFinal() {
   });
 }
 
-/* SMOOTH NO MOVEMENT + QUOTES */
+/* NO smooth movement + quotes */
 const noQuotes = [
   "“Are you sure? My heart is right here.” 💗",
   "“Some stories deserve a yes.” ✨",
@@ -69,12 +69,10 @@ const noQuotes = [
 let quoteIndex = 0;
 
 noBtn.addEventListener("mouseenter", () => {
-  // change quote
   hint.textContent = noQuotes[quoteIndex % noQuotes.length];
   hint.style.opacity = 1;
   quoteIndex++;
 
-  // smooth move every time
   const x = Math.random() * 180 - 90;
   const y = Math.random() * 90 - 45;
 
