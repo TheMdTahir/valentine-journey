@@ -20,9 +20,7 @@ body {
   text-align: center;
   padding: 40px 20px;
 }
-.screen.active {
-  display: flex;
-}
+.screen.active { display: flex; }
 
 /* Text */
 h1, h2 {
@@ -30,9 +28,8 @@ h1, h2 {
   font-weight: normal;
   margin-bottom: 18px;
 }
-.subtitle {
-  margin-bottom: 26px;
-}
+.subtitle { margin-bottom: 26px; }
+
 p {
   max-width: 520px;
   font-size: 18px;
@@ -52,9 +49,7 @@ button {
   margin-top: 18px;
   transition: transform 0.3s ease;
 }
-button:hover {
-  transform: scale(1.05);
-}
+button:hover { transform: scale(1.05); }
 
 /* Letter animation */
 .letter p {
@@ -62,17 +57,13 @@ button:hover {
   transform: translateY(10px);
   transition: opacity .8s ease, transform .8s ease;
 }
-.letter p.show {
-  opacity: 1;
-  transform: translateY(0);
-}
+.letter p.show { opacity: 1; transform: translateY(0); }
+
 .highlight {
   font-style: italic;
   color: #b03060;
 }
-.signature {
-  margin-top: 10px;
-}
+.signature { margin-top: 10px; }
 
 /* YES / NO */
 .buttons {
@@ -107,15 +98,14 @@ button:hover {
   opacity: 1;
   transform: scale(1);
 }
+
 .final-letter p {
   opacity: 0;
   transition: opacity 1.2s ease;
 }
-.final-letter p.show {
-  opacity: 1;
-}
+.final-letter p.show { opacity: 1; }
 
-/* Effects */
+/* Cinematic fade & glow */
 #fade {
   position: fixed;
   inset: 0;
@@ -124,9 +114,8 @@ button:hover {
   transition: opacity 1s ease;
   pointer-events: none;
 }
-#fade.show {
-  opacity: 1;
-}
+#fade.show { opacity: 1; }
+
 #glow {
   position: fixed;
   width: 200px;
@@ -141,4 +130,27 @@ button:hover {
 #glow.show {
   opacity: 1;
   transform: scale(6);
+}
+
+/* 💥 Heart spark firecrackers */
+.heart-spark {
+  position: fixed;
+  font-size: 20px;
+  pointer-events: none;
+  z-index: 20;
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: sparkMove 900ms ease-out forwards;
+}
+
+@keyframes sparkMove {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--x), var(--y)) scale(0.35);
+    opacity: 0;
+  }
 }
